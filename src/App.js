@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card/Card';
+import iconOne from '../src/images/icon1.png';
+import iconTwo from '../src/images/icon2.png';
+import iconThree from '../src/images/icon3.png';
+import iconFour from '../src/images/icon4.png';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <section className='card-name'>
+        <Card
+          img={iconOne}
+          title="Declarative"
+          text="React makes it painless to create interactive UIs." 
+        />
+        <Card
+          img={iconTwo}
+          title="Components"
+          text="Build encapsulated components that manage their state."
+        />
+        <Card
+          img={iconThree}
+          title="Single-Way"
+          text="A set of immutable values are passed to the components."
+        />
+        <Card
+          img={iconFour}
+          title="JSX"
+          text="Statically-typed, designed to run on modern browsers."
+        />
+      </section>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+header {
+    background-color: #323b59;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    height: 60vh;
+}
+
+header>section {
+    text-align: left;
+    margin-left: 20px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 60px;
+    width: 50%;
+}
+
+.btn {
+    background-color: #FFFFFF;
+    border: none;
+    color: #323b59;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
